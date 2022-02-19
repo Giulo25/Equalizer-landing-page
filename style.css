@@ -176,7 +176,7 @@ button img {
 footer {
   display: grid;
   grid-template-columns: 16.5% 1fr auto;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 10rem;
   color: #191826;
 }
