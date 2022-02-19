@@ -1,0 +1,264 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.6rem;
+  /* background-color: #212121; */
+}
+
+
+/* helpers
+---------------------------------------------- */
+.br12 {
+  border-radius: 12px;
+}
+
+
+
+/* typography
+---------------------------------------------- */
+h1 {
+  font-size: 8.8rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 88px;
+  color: #191826;
+}
+h2 {
+  font-size: 4rem;
+  line-height: 5.2rem;
+}
+p {
+  font-size: 2rem;
+  line-height: 34px;
+  color: #191826;
+}
+
+/* intro section
+---------------------------------------------- */
+
+main {
+  max-width: 144rem;
+  padding: 6.2rem 16.5rem 10rem 16.5rem;
+  margin: 0 auto;
+  position: relative;
+  background: url(assets/bg-main-desktop.png) no-repeat 60% 500%;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.pattern-1 {
+  width: 31rem;
+  position: absolute;
+  right: 0;
+  top: -2%;
+  z-index: -1;
+}
+.intro-text {
+  max-width: 80%;
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  z-index: 1;
+}
+.intro-text p {
+  max-width: 95%;
+}
+
+
+/* main section
+---------------------------------------------- */
+.section {
+  background-color: #191826;
+  height: 60rem;
+  max-width: 111rem;
+  position: relative;
+  margin-top: 32rem;
+  margin-bottom: 20rem;
+}
+.pattern-2 {
+  width: 31rem;
+  position: absolute;
+  top: -4rem;
+  left: 30%;
+  z-index: 1;
+}
+.mobile-img {
+  width: 31rem;
+  position: absolute;
+  top: -35%;
+  left: 9.1%;
+  z-index: 2;
+}
+.card {
+  width: 44.6rem;
+  height: 62.5rem;
+  background-color: #FA7453;
+  z-index: 2;
+  position: absolute;
+  right: 8.5%;
+  top: 15%;
+  color: #FCFAF9;
+  padding: 5.6rem 6rem 5rem 5.4rem;
+
+}
+.card p {
+  margin-top: 2.2rem;
+  margin-bottom: 4.6rem;
+  color: inherit;
+}
+.card-price {
+  margin: 2rem 0;
+  margin-bottom: 6rem;
+}
+.card-price p {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.card-price span {
+  font-weight: 700;
+  font-size: 6.5rem;
+}
+button {
+  width: 100%;
+  padding: 1.9rem;
+  border: none;
+  font-size: 1.8rem;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: -0.18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+button img {
+  width: 1.7rem;
+  height: 2rem;
+}
+
+.btn-ios {
+  margin-bottom: 1.6rem;
+  background-color: #191826;
+  color: #FCFAF9;
+
+}
+.btn-ios:hover {
+  background-color: #66E2DC;
+}
+.btn-android {
+  background-color: #FCFAF9;
+  color: #191826;
+}
+.btn-android:hover {
+  background-color: #FFB964;
+  color: #191826;
+}
+
+
+/* footer
+---------------------------------------------- */
+
+footer {
+  display: grid;
+  grid-template-columns: 16.5% 1fr auto;
+  grid-template-rows: 1fr 1fr;
+  gap: 10rem;
+  color: #191826;
+}
+
+footer p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.social-icon {
+  align-self: center;
+  display: flex;
+  gap: 2rem;
+}
+.svg {
+  cursor: pointer;
+  fill:#191826;
+
+}
+.svg:hover {
+  fill:#FA7453;
+}
+
+.footer-email {
+  font-weight: 700;
+  cursor: pointer;
+
+}
+.footer-email a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* media queries
+---------------------------------------------- */
+/* desktop 1392px */
+@media (max-width: 87em) {
+  main {padding: 6.2rem 12rem 10rem 12rem;background: url(assets/bg-main-desktop.png) no-repeat 60% 200%;}
+  h1{font-size: 6.4rem; line-height: 88%;}
+  p {font-size: 1.8rem;line-height: 1.5;}
+  .intro-text {max-width: 78%;}
+
+}
+
+/* tablet 1088px */
+@media (max-width: 68em) {
+  
+  main {padding: 6.2rem 3.3rem 10rem 3.3rem;background: url(assets/bg-main-tablet.png) no-repeat 75% -30%;}
+  h2 {font-size: 3.2rem;}
+  .pattern-1 {width: 26.6rem;right: -3%;}
+  .intro-text {margin-top: 9.5rem;}
+
+  .section {margin-top: 25rem;}
+  .mobile-img {width: 27rem;top: -24%;}
+  .card {width: 40rem;height: 55rem;right: 8.5%;top: 25%;padding: 4.8rem;}
+  .card p {line-height: 1.5; margin-top: 1.6rem;margin-bottom: 0rem;}
+  .card-price {margin: 1rem 0;}
+
+  footer {grid-template-columns: 2fr 1fr;grid-template-rows: auto 1fr;column-gap: 2.6rem; row-gap: 2.5rem;}
+  footer img {grid-row: 1/2; grid-column: 1/-1;}
+  .social-icon {justify-content: end;}
+}
+
+/* mobile 592px*/
+@media (max-width: 37em) {
+  main {padding: 3rem 0rem 5rem 0rem;background: url(assets/bg-main-mobile.png) no-repeat -10% -15%;}
+  h1{font-size: 4rem;letter-spacing: -0.45px;line-height: 1.3;}
+  .logo {padding-inline: 2.4rem}
+  .pattern-1 {display: none;}
+  .intro-text {max-width: 100%;padding-inline: 2.4rem; margin-top: 6.4rem;gap: 2rem;}
+  .intro-text p {font-size: 1.6rem;max-width: 100%;}
+
+
+  .card {width: max(37.6rem, 80%);left: 50%;transform: translate(-50%, 0%);top:65%;padding: 3.6rem;}
+  .mobile-img {width: max(20.9rem, 50%);top:-17%;left: 50%;transform: translate(-50%, 0%);}
+  .section {height: 60rem;width: 100%;margin-top: 16rem;margin-bottom: 42rem;}
+  .pattern-2 { width: max(28rem, 60%) ;top: 0;left: 50%;transform: translate(-50%, 0%);}
+
+  footer {grid-template-columns: 1fr; padding-inline: 2.4rem;}
+  footer .logo {margin-bottom: 1.6rem;padding-inline: 0rem;}
+  .social-icon {justify-content: start; margin-top: 3.2rem;}
+
+
+}
