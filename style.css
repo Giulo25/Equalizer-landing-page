@@ -52,7 +52,7 @@ main {
   padding: 6.2rem 16.5rem 10rem 16.5rem;
   margin: 0 auto;
   position: relative;
-  background: url(assets/bg-main-desktop.png) no-repeat 60% 500%;
+  background: url(assets/bg-main-desktop.png) no-repeat 60% 100%;
   z-index: 1;
   background-color: #fff;
 }
@@ -215,7 +215,7 @@ footer p {
 ---------------------------------------------- */
 /* desktop 1392px */
 @media (max-width: 87em) {
-  main {padding: 6.2rem 12rem 10rem 12rem;background: url(assets/bg-main-desktop.png) no-repeat 60% 200%;}
+  main {padding: 6.2rem 12rem 10rem 12rem;}
   h1{font-size: 6.4rem; line-height: 88%;}
   p {font-size: 1.8rem;line-height: 1.5;}
   .intro-text {max-width: 78%;}
