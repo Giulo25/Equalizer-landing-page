@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution](https://github.com/Giulo25/Equalizer-landing-page)
-- Live Site URL: [live site](https://your-live-site-url.com)
+- Live Site URL: [live site](https://giulo25.github.io/Equalizer-landing-page/)
 
 ## Author
 
